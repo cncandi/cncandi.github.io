@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "service": "Service & Support",
+    "news": "News & Events",
+    "about": "About Us",
+    "contact": "Contact",
+    "demo": "Request Demo",
+    "products_items": {
+      "sprutcam": "SprutCAM ENCY",
+      "p3d": "P3D Slicer",
+      "solidworks": "SolidWorks",
+      "delmia": "DELMIA / CATIA"
+    },
+    "solutions_items": {
+      "cnc": "CNC Milling & Turning",
+      "robot": "Robot Machining",
+      "5axis": "5-Axis Machining",
+      "cad": "CAD Design"
+    }
+  },
+  "hero": {
+    "tag": "CAD/CAM & Robotics since 1994",
+    "headline": "Software & Consulting for Modern Manufacturing",
+    "sub": "SprutCAM ENCY, P3D Slicer, SolidWorks, DELMIA and CATIA — from a single source, with over 30 years of experience in the DACH region.",
+    "cta_primary": "Explore Products",
+    "cta_secondary": "Request Demo"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "customers": "Customers DACH",
+    "products": "Software Products",
+    "support": "Personal Support"
+  },
+  "products": {
+    "heading": "Our Software Solutions",
+    "sub": "Specialised in CAM, CAD and non-planar 3D printing with robots and 5-axis CNC.",
+    "sprutcam_desc": "Powerful CAM software for milling, turning, wire EDM and robotic machining.",
+    "p3d_desc": "Slicing software for robots and 5-axis CNC — non-planar 3D printing redefined.",
+    "solidworks_desc": "The leading 3D CAD platform for design and product development. Authorised reseller.",
+    "delmia_desc": "Digital factory and robot simulation by Dassault Systèmes. DACH sales partner.",
+    "learn_more": "Learn more"
+  },
+  "solutions": {
+    "heading": "Solutions by Application",
+    "sub": "We advise independently and find the right software for your manufacturing task.",
+    "cnc_title": "CNC Milling & Turning",
+    "cnc_desc": "From 2.5D to 5-axis simultaneous machining. SprutCAM ENCY or SolidCAM — we choose the best solution for your machine.",
+    "robot_title": "Robot Machining",
+    "robot_desc": "Milling, grinding, welding and non-planar 3D printing with industrial robots. Offline programming with SprutCAM or P3D Slicer.",
+    "5axis_title": "5-Axis & Multi-Tasking",
+    "5axis_desc": "Program complex simultaneous operations efficiently — with optimised toolpaths and safe collision checking.",
+    "cad_title": "CAD Design",
+    "cad_desc": "SolidWorks, CATIA and DELMIA for product development, plant engineering and digital factory planning. Training and support included."
+  },
+  "news": {
+    "heading": "News & Events",
+    "all": "All News"
+  },
+  "cta": {
+    "heading": "Ready to take your manufacturing to the next level?",
+    "sub": "Get in touch — we analyse your needs and recommend the optimal software solution.",
+    "btn_demo": "Schedule a Demo",
+    "btn_contact": "Contact Us"
+  },
+  "footer": {
+    "tagline": "CAD/CAM & Robotics Software since 1994",
+    "products": "Products",
+    "company": "Company",
+    "about": "About Us",
+    "contact_page": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "legal": "Terms & Conditions",
+    "rights": "All rights reserved."
+  }
+}

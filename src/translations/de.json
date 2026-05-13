@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "products": "Produkte",
+    "solutions": "Lösungen",
+    "service": "Service & Support",
+    "news": "News & Termine",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "demo": "Demo anfragen",
+    "products_items": {
+      "sprutcam": "SprutCAM ENCY",
+      "p3d": "P3D Slicer",
+      "solidworks": "SolidWorks",
+      "delmia": "DELMIA / CATIA"
+    },
+    "solutions_items": {
+      "cnc": "CNC-Fräsen & Drehen",
+      "robot": "Roboter-Bearbeitung",
+      "5axis": "5-Achs-Bearbeitung",
+      "cad": "CAD-Konstruktion"
+    }
+  },
+  "hero": {
+    "tag": "CAD/CAM & Robotics seit 1994",
+    "headline": "Software & Beratung für die moderne Fertigung",
+    "sub": "SprutCAM ENCY, P3D Slicer, SolidWorks, DELMIA und CATIA — aus einer Hand, mit über 30 Jahren Erfahrung im DACH-Raum.",
+    "cta_primary": "Produkte entdecken",
+    "cta_secondary": "Demo anfragen"
+  },
+  "stats": {
+    "years": "Jahre Erfahrung",
+    "customers": "Kunden DACH",
+    "products": "Softwareprodukte",
+    "support": "Persönlicher Support"
+  },
+  "products": {
+    "heading": "Unsere Softwarelösungen",
+    "sub": "Spezialisiert auf CAM, CAD und nicht-planares 3D-Drucken mit Robotern und 5-Achs-CNC.",
+    "sprutcam_desc": "Leistungsstarke CAM-Software für Fräsen, Drehen, Drahterodieren und Roboterbearbeitung.",
+    "p3d_desc": "Slicing-Software für Roboter und 5-Achs-CNC — nicht-planares 3D-Drucken neu definiert.",
+    "solidworks_desc": "3D-CAD-Marktführer für Konstruktion und Produktentwicklung. Autorisierter Reseller.",
+    "delmia_desc": "Digitale Fabrik und Robotersimulation von Dassault Systèmes. DACH-Vertriebspartner.",
+    "learn_more": "Mehr erfahren"
+  },
+  "solutions": {
+    "heading": "Lösungen nach Anwendungsbereich",
+    "sub": "Wir beraten herstellerneutral und finden die passende Software für Ihre Fertigungsaufgabe.",
+    "cnc_title": "CNC-Fräsen & Drehen",
+    "cnc_desc": "Von 2,5D bis 5-Achs simultane Bearbeitung. SprutCAM ENCY oder SolidCAM — wir wählen die beste Lösung für Ihre Maschine.",
+    "robot_title": "Roboter-Bearbeitung",
+    "robot_desc": "Fräsen, Schleifen, Schweißen und nicht-planares 3D-Drucken mit Industrierobotern. Offline-Programmierung mit SprutCAM oder P3D Slicer.",
+    "5axis_title": "5-Achs & Multi-Tasking",
+    "5axis_desc": "Komplexe simultane Bearbeitungen wirtschaftlich programmieren — mit optimalen Werkzeugwegen und sicherer Kollisionsprüfung.",
+    "cad_title": "CAD-Konstruktion",
+    "cad_desc": "SolidWorks, CATIA und DELMIA für Produktentwicklung, Anlagenbau und digitale Fabrikplanung. Schulung und Support inklusive."
+  },
+  "news": {
+    "heading": "News & Termine",
+    "all": "Alle News"
+  },
+  "cta": {
+    "heading": "Bereit für die nächste Stufe in Ihrer Fertigung?",
+    "sub": "Sprechen Sie uns an — wir analysieren Ihren Bedarf und empfehlen die optimale Softwarelösung.",
+    "btn_demo": "Demo vereinbaren",
+    "btn_contact": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "tagline": "CAD/CAM & Robotics Software seit 1994",
+    "products": "Produkte",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "contact_page": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "legal": "AGB",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
