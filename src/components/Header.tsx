@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useI18n } from '@/lib/i18n'
 
 export default function Header() {
@@ -51,14 +52,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 bg-brand-blue rounded flex items-center justify-center">
-            <span className="text-white font-bold text-sm font-display">DTR</span>
-          </div>
-          <div className="leading-tight">
-            <div className="text-brand-navy font-semibold text-sm tracking-tight">CAD/CAM Systeme</div>
-            <div className="text-brand-muted text-xs">Datentechnik Reitz</div>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logos/logo-dtr.png"
+            alt="CAD/CAM Systeme Datentechnik Reitz"
+            width={160}
+            height={50}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

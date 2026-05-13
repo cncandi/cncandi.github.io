@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useI18n } from '@/lib/i18n'
 
 export default function Footer() {
@@ -16,13 +17,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 bg-brand-blue rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm font-display">DTR</span>
-              </div>
-              <div>
-                <div className="font-semibold text-brand-navy text-sm">CAD/CAM Systeme</div>
-                <div className="text-brand-muted text-xs">Datentechnik Reitz GmbH & Co. KG</div>
-              </div>
+              <Image
+                src="/images/logos/logo-dtr.png"
+                alt="CAD/CAM Systeme Datentechnik Reitz"
+                width={160}
+                height={50}
+                className="h-10 w-auto object-contain"
+              />
             </div>
             <p className="text-brand-muted text-sm leading-relaxed mb-5 max-w-xs">
               {f.tagline}
