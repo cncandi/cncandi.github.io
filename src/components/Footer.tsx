@@ -1,63 +1,52 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useI18n } from '@/lib/i18n'
 
 export default function Footer() {
-  const { t } = useI18n()
-  const year = new Date().getFullYear()
   return (
-    <footer className="bg-white border-t border-gray-100">
-      {/* Teal top accent */}
-      <div className="h-1 bg-gradient-to-r from-brand-teal via-brand-mint to-brand-blue" />
-      <div className="max-w-7xl mx-auto px-6 py-14">
-        <div className="grid md:grid-cols-4 gap-10">
-          <div className="md:col-span-2">
-            <div className="mb-4">
-              <Image src="/images/logos/logo-dtr.png" alt="DTR Reitz" width={160} height={50} className="h-10 w-auto object-contain" />
-            </div>
-            <p className="text-brand-muted text-sm leading-relaxed mb-5 max-w-xs">CAD/CAM & Robotics Software seit 1994</p>
-            <div className="flex items-center gap-3">
-              {[
-                {href:'https://cnc-technik.de/linkedin', label:'LinkedIn', d:'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'},
-                {href:'https://cnc-technik.de/youtube', label:'YouTube', d:'M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'},
-              ].map(s => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                  className="w-9 h-9 rounded-lg border border-gray-200 flex items-center justify-center text-brand-muted hover:border-brand-teal hover:text-brand-teal transition-colors">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={s.d}/></svg>
-                </a>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-brand-navy mb-4">ENCY CAM</h4>
-            <ul className="space-y-2">
-              {[['CAD/CAM Software','/produkte/sprutcam-ency'],['2.5D Fräsbearbeitung','/ency/2-5d-fraesen'],['Simultanfräsen','/ency/simultanfraesen'],['Maschinensimulation','/ency/maschinensimulation'],['Roboterprogrammierung','/robotik/programmierung'],['P3D Slicer','/produkte/p3d-slicer']].map(([l,h]) => (
-                <li key={h}><Link href={h} className="text-sm text-brand-muted hover:text-brand-teal transition-colors">{l}</Link></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-brand-navy mb-4">Unternehmen</h4>
-            <ul className="space-y-2">
-              {[[t.footer.about,'/ueber-uns'],['Team','/unternehmen/team'],['Forschung','/unternehmen/forschung'],['Service & Schulungen','/service'],[t.footer.contact_page,'/kontakt'],[t.footer.imprint,'/impressum'],[t.footer.privacy,'/datenschutz']].map(([l,h]) => (
-                <li key={h}><Link href={h} className="text-sm text-brand-muted hover:text-brand-teal transition-colors">{l}</Link></li>
-              ))}
-            </ul>
-            <div className="mt-6 pt-4 border-t border-gray-100 text-sm text-brand-muted space-y-1">
-              <div>Perfstraße 2 · 35216 Breidenstein</div>
-              <a href="tel:+4964617593437" className="hover:text-brand-teal transition-colors block">+49 6461 7593437</a>
-              <a href="mailto:reitz@cnc-technik.de" className="hover:text-brand-teal transition-colors block">reitz@cnc-technik.de</a>
-            </div>
+    <footer className="bg-brand-navy border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <nav className="flex flex-wrap gap-6 text-sm text-white/50">
+            <Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link>
+            <Link href="/datenschutz" className="hover:text-white transition-colors">Unternehmensrichtlinien</Link>
+            <a href="https://support.ency-software.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Zendesk</a>
+            <a href="https://www.industryarena.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Industryarena</a>
+          </nav>
+          <div className="flex gap-3">
+            {[
+              {href:'https://cnc-technik.de/linkedin',label:'LinkedIn',d:'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'},
+              {href:'https://cnc-technik.de/youtube',label:'YouTube',d:'M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'},
+            ].map(s => (
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                className="w-8 h-8 rounded border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/40 transition-colors">
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d={s.d}/></svg>
+              </a>
+            ))}
           </div>
         </div>
-        <div className="mt-12 pt-6 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-brand-muted">© {year} CAD/CAM Systeme Datentechnik Reitz GmbH & Co. KG. {t.footer.rights}</p>
-          <div className="flex items-center gap-6 text-xs text-brand-muted">
-            <Link href="/impressum" className="hover:text-brand-teal transition-colors">{t.footer.imprint}</Link>
-            <Link href="/datenschutz" className="hover:text-brand-teal transition-colors">{t.footer.privacy}</Link>
-            <Link href="/agb" className="hover:text-brand-teal transition-colors">{t.footer.legal}</Link>
+
+        <div className="flex flex-wrap items-center gap-8 py-4 border-t border-white/10">
+          <div className="flex items-center gap-2 text-sm text-white/50">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            info@cnc-technik.de
           </div>
+          <div className="flex items-center gap-2 text-sm text-white/50">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            Perfstrasse 2, 35216 Breidenstein
+          </div>
+          <div className="flex items-center gap-2 text-sm text-white/50">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            +49 (6461) 759 343 7
+          </div>
+        </div>
+
+        <div className="pt-4 border-t border-white/10 text-center text-xs text-white/30">
+          @Copyright Datentechnik Reitz GmbH & Co.KG
+          <span className="mx-4">·</span>
+          <Link href="/datenschutz" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
+          <span className="mx-4">·</span>
+          <Link href="/agb" className="hover:text-white/60 transition-colors">Disclaimer</Link>
         </div>
       </div>
     </footer>
