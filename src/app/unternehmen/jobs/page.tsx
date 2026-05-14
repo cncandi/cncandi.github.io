@@ -7,23 +7,26 @@ export const metadata: Metadata = { title: 'Freie Stellen | Datentechnik Reitz' 
 export default function FreieStellen() {
   return (
     <PageLayout>
-      {/* Hero mit Team-Foto */}
-      <section className="relative h-72 overflow-hidden">
-        <Image
-          src="/images/mockup/freie_stellen_01_1536x1024.png"
-          alt="Team Datentechnik Reitz"
-          fill
-          className="object-cover object-top"
-        />
-        <div className="absolute inset-0 bg-brand-navy/60" />
-        <div className="absolute inset-0 flex items-end pb-8 max-w-7xl mx-auto px-6 w-full">
-          <div>
-            <h1 className="font-display text-4xl lg:text-5xl text-white leading-tight mb-3">
+      {/* Hero: Text links, Bild rechts — wie im Mockup */}
+      <section className="pt-20 min-h-[320px] flex items-stretch">
+        <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-0 items-center">
+          {/* Links: Text */}
+          <div className="py-10">
+            <h1 className="font-display text-4xl lg:text-5xl text-white leading-tight mb-4">
               Freie Stellen bei<br />Datentechnik Reitz
             </h1>
-            <p className="text-white/70 text-sm max-w-lg">
+            <p className="text-white/60 text-sm max-w-md leading-relaxed">
               Werden Sie Teil unseres dynamischen Teams und gestalten Sie die Zukunft der Fertigungsautomation. Nachfolgend finden Sie unsere aktuellen Stellenausschreibungen.
             </p>
+          </div>
+          {/* Rechts: Team-Foto */}
+          <div className="hidden lg:block relative h-72">
+            <Image
+              src="/images/mockup/freie_stellen_01_1536x1024.png"
+              alt="Team Datentechnik Reitz"
+              fill
+              className="object-cover object-center rounded-lg"
+            />
           </div>
         </div>
       </section>
@@ -66,7 +69,7 @@ export default function FreieStellen() {
               { title: 'CAD/CAM Software Consultant (m/w/d)', details: ['Vollzeit', 'Breidenstein / Remote', 'Ab sofort'] },
               { title: 'Vertriebsmitarbeiter CAD/CAM (m/w/d)', details: ['Vollzeit', 'DACH-Region', 'Ab sofort'] },
             ].map(job => (
-              <div key={job.title} className="border border-brand-teal/20 rounded-xl p-6 bg-white/5">
+              <div key={job.title} className="border border-white/10 rounded-xl p-6 bg-white/5">
                 <h3 className="text-white font-semibold mb-3">{job.title}</h3>
                 <div className="flex flex-wrap gap-2 mb-5">
                   {job.details.map(d => (
@@ -74,7 +77,7 @@ export default function FreieStellen() {
                   ))}
                 </div>
                 <Link href="/kontakt"
-                  className="inline-flex items-center gap-2 border border-brand-teal/40 text-brand-teal text-sm px-4 py-2 rounded hover:bg-brand-teal/10 transition-colors">
+                  className="inline-flex items-center gap-2 border border-brand-teal/40 text-brand-teal text-sm px-4 py-2.5 rounded hover:bg-brand-teal/10 transition-colors">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                   Jetzt online bewerben
                 </Link>
