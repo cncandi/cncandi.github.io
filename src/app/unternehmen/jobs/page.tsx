@@ -3,15 +3,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 export default function Page() {
   return (
-    <PageLayout>
-      <section className="relative bg-brand-navy py-24 overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-teal to-transparent" />
-        <div className="absolute inset-0"><Image src="/images/assets/IMG_0453-scaled-3.webp" alt="Freie Stellen" fill className="object-cover opacity-20" /><div className="absolute inset-0 bg-brand-navy/80" /></div>
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <h1 className="font-display text-5xl text-white mb-6">Freie Stellen</h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">Diese Seite wird aktuell ausgebaut.</p>
-          <Link href="/kontakt" className="btn-primary">Kontakt aufnehmen</Link>
+    <PageLayout title="Freie Stellen" subtitle="Werden Sie Teil unseres Teams">
+      <section className="py-12 max-w-7xl mx-auto px-6">
+        <div className="rounded-xl overflow-hidden border border-brand-teal/20 mb-8">
+          <Image src="/images/assets/IMG_0453-scaled-3.webp" alt="Freie Stellen" width={1200} height={500} className="w-full object-cover max-h-80" />
         </div>
+        <p className="text-white/70 leading-relaxed mb-8">Diese Seite wird aktuell ausgebaut. Für Informationen nehmen Sie bitte Kontakt mit uns auf.</p>
+        <Link href="/kontakt" className="inline-flex items-center gap-2 bg-brand-teal text-white px-6 py-3 rounded font-semibold hover:bg-brand-teal-dark transition-colors">
+          Kontakt aufnehmen
+        </Link>
       </section>
     </PageLayout>
   )

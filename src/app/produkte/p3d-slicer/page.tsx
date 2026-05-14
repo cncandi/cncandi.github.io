@@ -2,73 +2,77 @@ import PageLayout from '@/components/PageLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-export const metadata: Metadata = { title: 'P3D Slicer | DTR Reitz' }
+export const metadata: Metadata = { title: 'P3D Slicer | ENCY' }
+
+const vorteile = [
+  { img: '/images/mockup/P3D_Slicer_02_768x512.png', title: 'Multi-Planar Slicing', desc: 'Komplexe 3D-Strukturen auf bis zu 8 Achsen drucken — ohne Stützstrukturen und mit optimaler Oberflächenqualität.' },
+  { img: '/images/mockup/P3D_Slicer_03_768x512.png', title: 'Non-Planar Printing', desc: 'Echtes nicht-planares Drucken für höhere Festigkeit und glattere Oberflächen gegenüber klassischem FDM.' },
+  { img: '/images/mockup/P3D_Slicer_04_768x512.png', title: 'Support-Free Printing', desc: 'Intelligente Bahnplanung eliminiert Stützstrukturen und reduziert Materialverbrauch und Nacharbeit.' },
+  { img: '/images/mockup/P3D_Slicer_05_768x512.png', title: 'Quality Checks', desc: 'Automatische Kollisionsprüfung und Qualitätssicherung vor jedem Druck.' },
+]
+
+const applications = [
+  { img: '/images/mockup/P3D_Slicer_10_768x512.png', title: 'Bauteilgrösse', desc: 'Drucken Sie Bauteile in beliebigen Größen — von Klein bis Großserien.' },
+  { img: '/images/mockup/P3D_Slicer_11_768x512.png', title: 'Alle Freiheiten', desc: 'Maximale geometrische Freiheit durch 5-Achs- und Roboter-Kinematik.' },
+  { img: '/images/mockup/P3D_Slicer_12_768x512.png', title: 'Drucken auf Oberflächen', desc: 'Direkt auf bestehende Bauteile drucken — Funktionalisierung und Reparatur.' },
+  { img: '/images/mockup/P3D_Slicer_13_768x512.png', title: 'Ansteuern 4. und 5. Achse', desc: 'Native Unterstützung für 4- und 5-Achs-CNC-Maschinen.' },
+]
+
+const anwendung = [
+  'Prototypenbau', 'Formenbau/Modellbau', 'Medizintechnik', 'Werbetechnik',
+  'Wissenschaftliche Modelle', 'Architektur', 'Kulissenbau/Kunst', 'Landschaftsbau',
+  'Messebau', 'Restauration',
+]
 
 export default function P3DPage() {
   return (
-    <PageLayout>
-      <section className="relative bg-brand-navy py-28 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image src="/images/assets/druck1-1.webp" alt="P3D" fill className="object-cover opacity-25" />
-          <div className="absolute inset-0 bg-brand-navy/80" />
+    <PageLayout title="P3D Slicer" subtitle="Drucken mit bis zu 8 Achsen">
+      <section className="py-12 max-w-7xl mx-auto px-6">
+        <div className="flex gap-4 mb-6">
+          <Link href="/demo" className="px-5 py-2.5 text-sm font-semibold border-2 border-brand-teal text-brand-teal rounded hover:bg-brand-teal hover:text-white transition-colors">Download</Link>
+          <Link href="/kontakt" className="px-5 py-2.5 text-sm font-semibold border-2 border-white/30 text-white rounded hover:border-white transition-colors">Mehr erfahren</Link>
         </div>
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-red to-transparent" />
-        <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 mb-6">
-              <div className="w-6 h-0.5 bg-brand-red" />
-              <span className="text-brand-red text-xs font-bold tracking-widest uppercase">Eigenentwicklung</span>
-            </div>
-            <div className="mb-6">
-              <Image src="/images/logos/logo-p3d.png" alt="P3D" width={120} height={50} className="h-10 w-auto object-contain brightness-0 invert" />
-            </div>
-            <h1 className="font-display text-4xl lg:text-5xl text-white leading-tight mb-6">
-              Nicht-planares 3D-Drucken mit Robotern und 5-Achs-CNC
-            </h1>
-            <p className="text-gray-300 leading-relaxed mb-8">
-              P3D Slicer ist unsere Eigenentwicklung für das Slicing von Bauteilen mit Robotern und 5-Achs-CNC-Maschinen. Nicht-planare Druckbahnen für höhere Festigkeit und glattere Oberflächen.
-            </p>
-            <div className="flex gap-4 flex-wrap">
-              <Link href="/demo" className="btn-primary">Demo anfragen</Link>
-              <a href="https://www.p3d-slicer.com" target="_blank" rel="noopener noreferrer" className="btn-outline-white">p3d-slicer.com</a>
-            </div>
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-            <Image src="/images/assets/P3D-Multi-Achsen-Slicer.png" alt="P3D Slicer" width={640} height={420} className="w-full object-cover" />
-          </div>
-        </div>
-      </section>
+        <p className="text-brand-teal text-sm mb-12">
+          aktuelle Roboter unserer Roboterpartner · Kosten Industrieroboter
+        </p>
 
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div data-reveal="left">
-              <span className="section-tag">Features</span>
-              <h2 className="section-heading mb-6">Was P3D Slicer einzigartig macht</h2>
-              <ul className="space-y-4">
-                {['Nicht-planare Werkzeugbahnen für höhere Festigkeit','Unterstützt KUKA, FANUC, ABB und alle gängigen Roboter','Visual Components Plugin für vollständige Offline-Simulation','Direkter G-Code Export für 5-Achs-CNC-Maschinen','Automatische Kollisionsprüfung und Achslimitüberwachung','Parametrische Bahnplanung mit frei definierbaren Schichten'].map(f => (
-                  <li key={f} className="flex items-start gap-3 text-brand-muted text-sm">
-                    <svg className="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div data-reveal="right" className="grid grid-cols-2 gap-4">
-              <div className="rounded-2xl overflow-hidden shadow-xl col-span-2">
-                <Image src="/images/assets/druck1-1.webp" alt="Roboter 3D Druck" width={640} height={300} className="w-full object-cover" />
+        {/* Vorteile */}
+        <h2 className="font-display text-2xl text-white mb-6">Vorteile</h2>
+        <div className="grid md:grid-cols-2 gap-4 mb-12">
+          {vorteile.map(v => (
+            <div key={v.title} data-reveal className="flex gap-4 border border-brand-teal/20 rounded-xl overflow-hidden bg-white/5">
+              <div className="relative w-32 flex-shrink-0">
+                <Image src={v.img} alt={v.title} fill className="object-cover" />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg">
-                <Image src="/images/assets/robot-1.webp" alt="Roboter" width={300} height={200} className="w-full object-cover" />
-              </div>
-              <div className="rounded-xl overflow-hidden shadow-lg bg-brand-navy flex items-center justify-center p-6">
-                <div className="text-center text-white">
-                  <div className="font-display text-4xl font-bold mb-1">5-Achs</div>
-                  <div className="text-gray-400 text-sm">& Roboter</div>
-                </div>
+              <div className="p-4">
+                <h3 className="text-white font-semibold mb-2">{v.title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed">{v.desc}</p>
               </div>
             </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Applications with images */}
+        <h2 className="font-display text-2xl text-white mb-6">Anwendungsfälle</h2>
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {applications.map(a => (
+            <div key={a.title} data-reveal className="flex items-center gap-4">
+              <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-brand-teal/30">
+                <Image src={a.img} alt={a.title} fill className="object-cover" />
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-1">{a.title}</h3>
+                <p className="text-white/60 text-sm">{a.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Application tags */}
+        <div className="flex flex-wrap gap-3">
+          {anwendung.map(a => (
+            <span key={a} className="border border-brand-teal/30 rounded-full px-4 py-1.5 text-sm text-white/70 hover:border-brand-teal hover:text-white transition-colors cursor-default">{a}</span>
+          ))}
         </div>
       </section>
     </PageLayout>
