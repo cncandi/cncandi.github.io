@@ -2,6 +2,9 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import StatsBar from '@/components/StatsBar'
 import ProductGrid from '@/components/ProductGrid'
+import EncyShowcase from '@/components/EncyShowcase'
+import P3DSection from '@/components/P3DSection'
+import RobotikSection from '@/components/RobotikSection'
 import SolutionsSection from '@/components/SolutionsSection'
 import NewsSection from '@/components/NewsSection'
 import CTASection from '@/components/CTASection'
@@ -15,6 +18,9 @@ export default function Home() {
         <Hero />
         <StatsBar />
         <ProductGrid />
+        <EncyShowcase />
+        <P3DSection />
+        <RobotikSection />
         <SolutionsSection />
         <NewsSection />
         <CTASection />
