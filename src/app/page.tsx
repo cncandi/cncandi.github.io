@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import LogoStrip from '@/components/LogoStrip'
 import StatsBar from '@/components/StatsBar'
 import ProductGrid from '@/components/ProductGrid'
 import EncyShowcase from '@/components/EncyShowcase'
@@ -9,6 +10,7 @@ import SolutionsSection from '@/components/SolutionsSection'
 import NewsSection from '@/components/NewsSection'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
+import ScrollReveal from '@/components/ScrollReveal'
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <LogoStrip />
         <StatsBar />
         <ProductGrid />
         <EncyShowcase />
@@ -26,6 +29,7 @@ export default function Home() {
         <CTASection />
       </main>
       <Footer />
+      <ScrollReveal />
     </>
   )
 }
