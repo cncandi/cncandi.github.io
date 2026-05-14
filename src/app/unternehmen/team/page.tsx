@@ -47,7 +47,7 @@ export default function TeamPage() {
             </div>
           </div>
           <div className="hidden lg:block relative h-72 rounded-xl overflow-hidden">
-            <Image src="/images/mockup/team_02_1536x1024.png" alt="Team Meeting" fill className="object-cover object-center" />
+            <Image src="/images/mockup/freie_stellen_01_1536x1024.png" alt="Team Meeting" fill className="object-cover object-center" />
           </div>
         </div>
       </section>

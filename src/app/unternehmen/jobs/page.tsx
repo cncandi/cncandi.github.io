@@ -22,7 +22,7 @@ export default function FreieStellen() {
           {/* Rechts: Team-Foto */}
           <div className="hidden lg:block relative h-72">
             <Image
-              src="/images/mockup/freie_stellen_01_1536x1024.png"
+              src="/images/mockup/team_02_1536x1024.png"
               alt="Team Datentechnik Reitz"
               fill
               className="object-cover object-center rounded-lg"
