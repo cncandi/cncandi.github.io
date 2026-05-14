@@ -1,18 +1,12 @@
 import type { Metadata } from 'next'
-import { DM_Sans, DM_Serif_Display } from 'next/font/google'
+import { Arimo } from 'next/font/google'
 import { I18nProvider } from '@/lib/i18n'
 import './globals.css'
 
-const dmSans = DM_Sans({
+const arimo = Arimo({
   subsets: ['latin'],
-  variable: '--font-body',
-  display: 'swap',
-})
-
-const dmSerif = DM_Serif_Display({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-display',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-arimo',
   display: 'swap',
 })
 
@@ -24,8 +18,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={`${dmSans.variable} ${dmSerif.variable}`}>
-      <body className="font-sans antialiased bg-white text-brand-navy">
+    <html lang="de" className={arimo.variable}>
+      <body className="antialiased" style={{ fontFamily: 'var(--font-arimo), Arial, sans-serif' }}>
         <I18nProvider>{children}</I18nProvider>
       </body>
     </html>

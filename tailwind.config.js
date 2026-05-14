@@ -18,8 +18,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans:    ['var(--font-body)', 'sans-serif'],
-        display: ['var(--font-display)', 'serif'],
+        sans:    ['var(--font-arimo)', 'Arial', 'sans-serif'],
+        display: ['var(--font-arimo)', 'Arial', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-out forwards',
