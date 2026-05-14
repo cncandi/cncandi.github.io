@@ -21,7 +21,7 @@ export default function EncyShowcase() {
           {/* Image side */}
           <div data-reveal="left" className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl img-zoom">
-              <Image src="/images/encycam/State-of-art-interface.png" alt="SprutCAM ENCY" width={700} height={480} className="w-full object-cover" />
+              <Image src="/images/encycam/State-of-art-interface.png" alt="ENCY" width={700} height={480} className="w-full object-cover" />
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-5 border border-gray-100">
@@ -43,15 +43,15 @@ export default function EncyShowcase() {
           <div data-reveal="right">
             <div className="inline-flex items-center gap-2 mb-3">
               <div className="w-8 h-0.5 bg-brand-red" />
-              <span className="text-brand-blue text-xs font-bold tracking-widest uppercase">SprutCAM ENCY</span>
+              <span className="text-brand-blue text-xs font-bold tracking-widest uppercase">ENCY</span>
             </div>
             <h2 className="font-display text-4xl lg:text-5xl text-brand-navy leading-tight mb-6 red-line">
               {lang==='de' ? 'Die komplette CAM-Lösung für Fräsen, Drehen & Roboter' : 'Complete CAM for Milling, Turning & Robots'}
             </h2>
             <p className="text-brand-muted leading-relaxed mb-8">
               {lang==='de'
-                ? 'SprutCAM ENCY vereint alle Fertigungsverfahren in einer Software — von einfacher 2,5D-Kontur bis simultaner 5-Achs-Bearbeitung und Roboterprogrammierung. Wir sind autorisierter Distributor für den DACH-Raum.'
-                : 'SprutCAM ENCY combines all manufacturing processes in one software — from simple 2.5D contours to simultaneous 5-axis and robot programming. We are the authorised distributor for the DACH region.'}
+                ? 'ENCY vereint alle Fertigungsverfahren in einer Software — von einfacher 2,5D-Kontur bis simultaner 5-Achs-Bearbeitung und Roboterprogrammierung. Wir sind autorisierter Distributor für den DACH-Raum.'
+                : 'ENCY combines all manufacturing processes in one software — from simple 2.5D contours to simultaneous 5-axis and robot programming. We are the authorised distributor for the DACH region.'}
             </p>
             <ul className="space-y-3 mb-8">
               {(lang==='de'
@@ -65,7 +65,7 @@ export default function EncyShowcase() {
               ))}
             </ul>
             <Link href="/produkte/sprutcam-ency" className="btn-primary">
-              {lang==='de' ? 'SprutCAM ENCY entdecken' : 'Discover SprutCAM ENCY'}
+              {lang==='de' ? 'ENCY entdecken' : 'Discover ENCY'}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </Link>
           </div>

@@ -30,8 +30,8 @@ export default function RobotikSection() {
             </h2>
             <p className="text-brand-muted leading-relaxed mb-8">
               {lang==='de'
-                ? 'Programmieren Sie Ihren Roboter offline — ohne Stillstand. SprutCAM ENCY und P3D Slicer unterstützen KUKA, FANUC, ABB, Yaskawa und alle weiteren gängigen Hersteller.'
-                : 'Program your robot offline — without downtime. SprutCAM ENCY and P3D Slicer support KUKA, FANUC, ABB, Yaskawa and all other common manufacturers.'}
+                ? 'Programmieren Sie Ihren Roboter offline — ohne Stillstand. ENCY und P3D Slicer unterstützen KUKA, FANUC, ABB, Yaskawa und alle weiteren gängigen Hersteller.'
+                : 'Program your robot offline — without downtime. ENCY and P3D Slicer support KUKA, FANUC, ABB, Yaskawa and all other common manufacturers.'}
             </p>
             <div className="grid grid-cols-3 gap-3 mb-8">
               {apps.map((a,i) => (

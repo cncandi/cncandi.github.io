@@ -7,7 +7,7 @@ const logos = [
   { name: 'Yaskawa',     img: null, text: 'Yaskawa' },
   { name: 'SolidWorks',  img: '/images/logos/logo-solidworks.png' },
   { name: 'Dassault',    img: null, text: 'Dassault Systèmes' },
-  { name: 'SprutCAM',    img: '/images/logos/logo-encycam.png' },
+  { name: 'ENCY',    img: '/images/logos/logo-encycam.png' },
   { name: 'P3D Slicer',  img: '/images/logos/logo-p3d.png' },
   { name: 'HEIDENHAIN',  img: null, text: 'HEIDENHAIN' },
   { name: 'Siemens',     img: null, text: 'Siemens 840D' },

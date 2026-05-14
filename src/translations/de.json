@@ -8,7 +8,7 @@
     "contact": "Kontakt",
     "demo": "Demo anfragen",
     "products_items": {
-      "sprutcam": "SprutCAM ENCY",
+      "sprutcam": "ENCY",
       "p3d": "P3D Slicer",
       "solidworks": "SolidWorks",
       "delmia": "DELMIA / CATIA"
@@ -23,7 +23,7 @@
   "hero": {
     "tag": "CAD/CAM & Robotics seit 1994",
     "headline": "Software & Beratung für die moderne Fertigung",
-    "sub": "SprutCAM ENCY, P3D Slicer, SolidWorks, DELMIA und CATIA — aus einer Hand, mit über 30 Jahren Erfahrung im DACH-Raum.",
+    "sub": "ENCY, P3D Slicer, SolidWorks, DELMIA und CATIA — aus einer Hand, mit über 30 Jahren Erfahrung im DACH-Raum.",
     "cta_primary": "Produkte entdecken",
     "cta_secondary": "Demo anfragen"
   },
@@ -46,9 +46,9 @@
     "heading": "Lösungen nach Anwendungsbereich",
     "sub": "Wir beraten herstellerneutral und finden die passende Software für Ihre Fertigungsaufgabe.",
     "cnc_title": "CNC-Fräsen & Drehen",
-    "cnc_desc": "Von 2,5D bis 5-Achs simultane Bearbeitung. SprutCAM ENCY oder SolidCAM — wir wählen die beste Lösung für Ihre Maschine.",
+    "cnc_desc": "Von 2,5D bis 5-Achs simultane Bearbeitung. ENCY oder SolidCAM — wir wählen die beste Lösung für Ihre Maschine.",
     "robot_title": "Roboter-Bearbeitung",
-    "robot_desc": "Fräsen, Schleifen, Schweißen und nicht-planares 3D-Drucken mit Industrierobotern. Offline-Programmierung mit SprutCAM oder P3D Slicer.",
+    "robot_desc": "Fräsen, Schleifen, Schweißen und nicht-planares 3D-Drucken mit Industrierobotern. Offline-Programmierung mit ENCY oder P3D Slicer.",
     "5axis_title": "5-Achs & Multi-Tasking",
     "5axis_desc": "Komplexe simultane Bearbeitungen wirtschaftlich programmieren — mit optimalen Werkzeugwegen und sicherer Kollisionsprüfung.",
     "cad_title": "CAD-Konstruktion",

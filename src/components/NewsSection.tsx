@@ -23,7 +23,7 @@ const news = [
     href: '/news/p3d-iiqworks',
   },
   {
-    date: '2026-03-13', tag: 'SprutCAM ENCY',
+    date: '2026-03-13', tag: 'ENCY',
     image: '/images/encycam/What-is-ENCY-scaled.jpg',
     titleDe: 'Strukturgruppen in ENCY CAM — effizientere Programmierung',
     titleEn: 'Structure groups in ENCY CAM — more efficient programming',

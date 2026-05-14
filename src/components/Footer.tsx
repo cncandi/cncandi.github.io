@@ -41,7 +41,7 @@ export default function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-widest text-brand-navy mb-4">{f.products}</h4>
             <ul className="space-y-2">
               {[
-                ['SprutCAM ENCY', '/produkte/sprutcam-ency'],
+                ['ENCY', '/produkte/sprutcam-ency'],
                 ['P3D Slicer', '/produkte/p3d-slicer'],
                 ['SolidWorks', '/produkte/solidworks'],
                 ['DELMIA / CATIA', '/produkte/delmia-catia'],

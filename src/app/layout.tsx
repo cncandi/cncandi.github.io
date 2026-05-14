@@ -18,8 +18,8 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   title: 'DTR Reitz GmbH – CAD/CAM & Robotics Software',
-  description: 'SprutCAM ENCY, P3D Slicer, SolidWorks, DELMIA und CATIA — Vertrieb, Beratung und Support seit 1994 für über 1.000 Kunden im DACH-Raum.',
-  keywords: 'CAD CAM CNC Roboter SprutCAM P3D Slicer SolidWorks DELMIA CATIA',
+  description: 'ENCY, P3D Slicer, SolidWorks, DELMIA und CATIA — Vertrieb, Beratung und Support seit 1994 für über 1.000 Kunden im DACH-Raum.',
+  keywords: 'CAD CAM CNC Roboter ENCY P3D Slicer SolidWorks DELMIA CATIA',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -8,7 +8,7 @@
     "contact": "Contact",
     "demo": "Request Demo",
     "products_items": {
-      "sprutcam": "SprutCAM ENCY",
+      "sprutcam": "ENCY",
       "p3d": "P3D Slicer",
       "solidworks": "SolidWorks",
       "delmia": "DELMIA / CATIA"
@@ -23,7 +23,7 @@
   "hero": {
     "tag": "CAD/CAM & Robotics since 1994",
     "headline": "Software & Consulting for Modern Manufacturing",
-    "sub": "SprutCAM ENCY, P3D Slicer, SolidWorks, DELMIA and CATIA — from a single source, with over 30 years of experience in the DACH region.",
+    "sub": "ENCY, P3D Slicer, SolidWorks, DELMIA and CATIA — from a single source, with over 30 years of experience in the DACH region.",
     "cta_primary": "Explore Products",
     "cta_secondary": "Request Demo"
   },
@@ -46,9 +46,9 @@
     "heading": "Solutions by Application",
     "sub": "We advise independently and find the right software for your manufacturing task.",
     "cnc_title": "CNC Milling & Turning",
-    "cnc_desc": "From 2.5D to 5-axis simultaneous machining. SprutCAM ENCY or SolidCAM — we choose the best solution for your machine.",
+    "cnc_desc": "From 2.5D to 5-axis simultaneous machining. ENCY or SolidCAM — we choose the best solution for your machine.",
     "robot_title": "Robot Machining",
-    "robot_desc": "Milling, grinding, welding and non-planar 3D printing with industrial robots. Offline programming with SprutCAM or P3D Slicer.",
+    "robot_desc": "Milling, grinding, welding and non-planar 3D printing with industrial robots. Offline programming with ENCY oder P3D Slicer.",
     "5axis_title": "5-Axis & Multi-Tasking",
     "5axis_desc": "Program complex simultaneous operations efficiently — with optimised toolpaths and safe collision checking.",
     "cad_title": "CAD Design",
