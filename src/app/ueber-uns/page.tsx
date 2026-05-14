@@ -12,7 +12,7 @@ export default function UeberUnsPage() {
               <span className="section-tag">Über uns</span>
               <h1 className="section-heading mb-6">CAD/CAM-Experten seit 1994</h1>
               <p className="text-brand-muted leading-relaxed mb-4">CAD/CAM Systeme Datentechnik Reitz GmbH & Co. KG steht seit über 30 Jahren für kompetente Beratung und persönlichen Support rund um CAD, CAM und Robotik.</p>
-              <p className="text-brand-muted leading-relaxed mb-4">Wir verteilen SprutCAM ENCY im DACH-Raum, entwickeln P3D Slicer für nicht-planares 3D-Drucken und sind autorisierter Reseller für SolidWorks, DELMIA und CATIA.</p>
+              <p className="text-brand-muted leading-relaxed mb-4">Wir vertreiben ENCY im DACH-Raum, entwickeln P3D Slicer für nicht-planares 3D-Drucken und sind autorisierter Reseller für SolidWorks, DELMIA und CATIA.</p>
               <p className="text-brand-muted leading-relaxed">Unsere Stärke: kein Callcenter, kein Ticket-System — sondern ein direkter Draht zu Experten, die Ihre Fertigungsaufgabe verstehen.</p>
             </div>
             <div data-reveal="right" className="grid grid-cols-2 gap-4">
