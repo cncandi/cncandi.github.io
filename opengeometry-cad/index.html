@@ -131,7 +131,21 @@
 </div>
 <script type="module">
 (async () => {
-  const files = Array.from({length: 8}, (_, i) => `./app.b64.${i + 1}.txt?v=2.0.0`);
+  const files = [
+    './app.b64.1.txt?v=2.0.0',
+    './app.b64.2a.txt?v=2.0.0',
+    './app.b64.2b.txt?v=2.0.0',
+    './app.b64.3a1.txt?v=2.0.0',
+    './app.b64.3a2.txt?v=2.0.0',
+    './app.b64.3b.txt?v=2.0.0',
+    './app.b64.4.txt?v=2.0.0',
+    './app.b64.5a.txt?v=2.0.0',
+    './app.b64.5b1.txt?v=2.0.0',
+    './app.b64.5b2.txt?v=2.0.0',
+    './app.b64.6.txt?v=2.0.0',
+    './app.b64.7.txt?v=2.0.0',
+    './app.b64.8.txt?v=2.0.0'
+  ];
   const parts = await Promise.all(files.map(async (file) => {
     const response = await fetch(file, { cache: 'no-store' });
     if (!response.ok) throw new Error(`Programmteil konnte nicht geladen werden: ${file}`);
