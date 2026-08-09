@@ -99,7 +99,7 @@
     </aside>
   </div>
 
-  <footer class="statusbar"><span id="statusText">Initialisierung …</span><span>Build 2.0.0 · OpenGeometry</span></footer>
+  <footer class="statusbar"><span id="statusText">Initialisierung …</span><span>Build 2.0.1 · OpenGeometry</span></footer>
 </div>
 
 <div id="featureDialog" class="modal-shell d-none">
@@ -131,43 +131,24 @@
 </div>
 <script type="module">
 (async () => {
-  const files = [
-    './app.b64.1.txt?v=2.0.0',
-    './app.b64.2a1.txt?v=2.0.0',
-    './app.b64.2a2.txt?v=2.0.0',
-    './app.b64.2b1.txt?v=2.0.0',
-    './app.b64.2b2.txt?v=2.0.0',
-    './app.b64.3a1.txt?v=2.0.0',
-    './app.b64.3a2.txt?v=2.0.0',
-    './app.b64.3b.txt?v=2.0.0',
-    './app.b64.4.txt?v=2.0.0',
-    './app.b64.5a.txt?v=2.0.0',
-    './app.b64.5b1.txt?v=2.0.0',
-    './app.b64.5b2.txt?v=2.0.0',
-    './app.b64.6.txt?v=2.0.0',
-    './app.b64.7.txt?v=2.0.0',
-    './app.b64.8.txt?v=2.0.0'
-  ];
-  const parts = await Promise.all(files.map(async (file) => {
-    const response = await fetch(file, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Programmteil konnte nicht geladen werden: ${file}`);
-    return (await response.text()).trim();
-  }));
-  const binary = atob(parts.join(''));
-  const bytes = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  const source = new TextDecoder().decode(bytes);
-  const moduleUrl = URL.createObjectURL(new Blob([source], { type: 'text/javascript' }));
   try {
-    await import(moduleUrl);
+    const response = await fetch('./app.js.gz?v=2.0.1', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Programm konnte nicht geladen werden: ${response.status}`);
+    if (!('DecompressionStream' in window)) throw new Error('Dieser Browser unterstützt DecompressionStream nicht.');
+    const stream = response.body.pipeThrough(new DecompressionStream('gzip'));
+    const source = await new Response(stream).text();
+    const moduleUrl = URL.createObjectURL(new Blob([source], { type: 'text/javascript' }));
+    try {
+      await import(moduleUrl);
+    } finally {
+      URL.revokeObjectURL(moduleUrl);
+    }
   } catch (error) {
     console.error(error);
     const status = document.getElementById('statusText');
     if (status) status.textContent = `Startfehler: ${error.message}`;
     const kernel = document.getElementById('kernelStatus');
     if (kernel) { kernel.classList.add('error'); kernel.innerHTML = '<span></span>Startfehler'; }
-  } finally {
-    URL.revokeObjectURL(moduleUrl);
   }
 })();
 </script>
